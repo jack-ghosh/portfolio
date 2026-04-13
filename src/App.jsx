@@ -77,7 +77,7 @@ function App() {
           <div className="experience-item">
             <div className="exp-header">
               <h3>Full Stack Developer</h3>
-              <span className="exp-company">Euphoria (Startup)</span>
+              <span className="exp-company">Euphaura (Startup)</span>
               <span className="exp-duration">6 months • Pune</span>
             </div>
             <ul className="exp-list">
@@ -179,8 +179,8 @@ function App() {
 
           <div className="project-card">
             <div className="project-header">
-              <h3>Euphoria (Startup)</h3>
-              <a href="https://euphoria.com" className="project-link">
+              <h3>Euphaura (Startup)</h3>
+              <a href="https://euphaura.com" className="project-link">
                 <ExternalLink size={18} />
               </a>
             </div>
