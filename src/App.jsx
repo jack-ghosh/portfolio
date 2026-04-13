@@ -17,6 +17,11 @@ function App() {
               <span className="highlight">Node.js</span>,
               <span className="highlight">React Native</span>,
               <span className="highlight">System Design</span>.
+              <br />
+              <span style={{ opacity: 0.8 }}>
+                Currently obsessed with real-time systems, scaling, and backend
+                performance.
+              </span>
             </p>
             <div className="hero-cta">
               <a
@@ -88,12 +93,12 @@ function App() {
                 Managed 2-person team during sprints, unblocked technical issues
               </li>
               <li>
-                Built Express.js APIs with MongoDB and optimized database
-                queries
+                Designed and shipped scalable Express.js APIs with MongoDB,
+                optimizing query performance for real-time features
               </li>
               <li>
-                Shipped community features to production, debugging and
-                maintaining in real-time
+                Delivered production-ready community features with real-time
+                updates, handling live debugging and performance issues
               </li>
             </ul>
           </div>
@@ -133,8 +138,9 @@ function App() {
               </a>
             </div>
             <p className="project-desc">
-              Real-time chat + live location sharing mobile app. Full-stack
-              architecture with production-grade patterns.
+              Real-time chat + live location sharing mobile app built with
+              scalable architecture, handling live messaging, geofencing, and
+              offline sync.
             </p>
             <div className="project-details">
               <div className="detail">
@@ -284,7 +290,9 @@ function App() {
       {/* FOOTER */}
       <footer className="footer">
         <div className="container">
-          <p>Last updated 2026 , April</p>
+          <p>
+            Open to opportunities 🚀 • Let’s build something impactful together
+          </p>
           <div className="footer-links">
             <a href="https://github.com/jack-ghosh">GitHub</a>
             <a href="https://linkedin.com/in/jack-ghosh">LinkedIn</a>
