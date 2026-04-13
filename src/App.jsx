@@ -180,7 +180,7 @@ function App() {
           <div className="project-card">
             <div className="project-header">
               <h3>Euphaura (Startup)</h3>
-              <a href="https://euphaura.com" className="project-link">
+              <a href="https://euphaura.in" className="project-link">
                 <ExternalLink size={18} />
               </a>
             </div>
