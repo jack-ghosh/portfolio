@@ -1,6 +1,15 @@
+import React from "react";
 import "./App.css";
-import { ExternalLink, Mail, Code, Zap, Users } from "lucide-react";
-
+import {
+  ExternalLink,
+  Mail,
+  Code,
+  Zap,
+  Users,
+  Download,
+  MapPin,
+  Calendar,
+} from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function App() {
@@ -14,13 +23,13 @@ function App() {
             <p className="hero-subtitle">Full Stack Developer</p>
             <p className="hero-desc">
               Building real-time systems and shipping production code.
-              <span className="highlight">Node.js</span>,
-              <span className="highlight">React Native</span>,
-              <span className="highlight">System Design</span>.
+              <span className="highlight">Node.js</span>
+              <span className="highlight">React Native</span>
+              <span className="highlight">System Design</span>
               <br />
               <span style={{ opacity: 0.8 }}>
-                Currently obsessed with real-time systems, scaling, and backend
-                performance.
+                Solo built and shipped <strong>TrackMate v1.3</strong> in 40
+                days. Focused on real-time architecture and distributed systems.
               </span>
             </p>
             <div className="hero-cta">
@@ -37,16 +46,13 @@ function App() {
                 <FaLinkedin size={18} /> LinkedIn
               </a>
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=jackghosh1323@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:jackghosh1323@gmail.com"
                 className="btn btn-secondary"
               >
                 <Mail size={18} /> Email
               </a>
             </div>
           </div>
-          <div className="hero-accent"></div>
         </div>
       </section>
 
@@ -55,16 +61,16 @@ function App() {
         <div className="container">
           <h2>About</h2>
           <p>
-            Full-stack developer with 6 months production experience at a
-            startup. I've built features end-to-end—backend APIs with Node.js &
-            MongoDB, real-time systems with Socket.io, and mobile apps in React
-            Native. I write clean code, manage teams, and solve problems at
-            scale.
+            Full-stack developer with{" "}
+            <strong>6 months production experience</strong> at a startup. I've
+            built features end-to-end—backend APIs with Node.js & MongoDB,
+            real-time systems with Socket.io, and mobile apps in React Native.
           </p>
           <p>
-            Currently extending my learning beyond the MVP phase. Focused on
-            understanding system design, Redis patterns, and real-time
-            architecture— not just shipping features.
+            I care about understanding systems deeply, not just shipping
+            features. Currently obsessed with <strong>Redis patterns</strong>,{" "}
+            <strong>offline-first synchronization</strong>, and{" "}
+            <strong>real-time architecture</strong>.
           </p>
         </div>
       </section>
@@ -83,22 +89,19 @@ function App() {
             <ul className="exp-list">
               <li>
                 Owned complete features end-to-end—architecture, backend APIs,
-                frontend UI, database design
+                frontend UI, and MongoDB design.
               </li>
               <li>
-                Conducted code reviews, established patterns for API design and
-                error handling
+                Conducted code reviews and established API design patterns that
+                reduced production bugs.
               </li>
               <li>
-                Managed 2-person team during sprints, unblocked technical issues
+                Managed 2-person team during sprints, handling task breakdown
+                and unblocking technical issues.
               </li>
               <li>
-                Designed and shipped scalable Express.js APIs with MongoDB,
-                optimizing query performance for real-time features
-              </li>
-              <li>
-                Delivered production-ready community features with real-time
-                updates, handling live debugging and performance issues
+                Optimized real-time socket events and implemented Redis caching
+                layers for community features.
               </li>
             </ul>
           </div>
@@ -111,11 +114,11 @@ function App() {
             </div>
             <ul className="exp-list">
               <li>
-                Handled technical customer queries, diagnosed product issues
+                Handled customer queries and diagnosed product issues for users.
               </li>
               <li>
-                Identified improvement opportunities and escalated to product
-                team
+                Identified product improvement opportunities and escalated
+                insights to the product team.
               </li>
             </ul>
           </div>
@@ -129,80 +132,72 @@ function App() {
 
           <div className="project-card">
             <div className="project-header">
-              <h3>TrackMate</h3>
-              <a
-                href="https://github.com/jack-ghosh/TrackMate"
-                className="project-link"
-              >
-                <ExternalLink size={18} />
-              </a>
+              <h3>
+                TrackMate <span className="v-tag">v1.3</span>
+              </h3>
+              <div className="project-actions">
+                <a
+                  href="https://github.com/jack-ghosh/TrackMate-app"
+                  className="project-link"
+                >
+                  <ExternalLink size={18} />
+                </a>
+              </div>
             </div>
             <p className="project-desc">
-              Real-time chat + live location sharing mobile app built with
-              scalable architecture, handling live messaging, geofencing, and
-              offline sync.
+              A production-grade real-time chat and live location sharing mobile
+              app. Built solo in 40 days. Features geofence alerts, offline
+              persistence, and encrypted messaging.
             </p>
             <div className="project-details">
               <div className="detail">
-                <h4>Backend</h4>
+                <h4>Backend Stack</h4>
                 <p>
-                  Socket.io with Redis adapter, real-time messaging, geofence
-                  alerts with Lua scripts, FCM push notifications, REST APIs
-                  with JWT auth.
+                  Node.js, Socket.io (Redis Adapter), Redis Lua scripts for
+                  geofencing, MongoDB, JWT auth with refresh tokens.
                 </p>
               </div>
               <div className="detail">
-                <h4>Frontend</h4>
-                <p>
-                  React Native with Redux normalization, react-native-maps
-                  integration, WatermelonDB for offline persistence, message
-                  encryption (nacl.secretbox).
-                </p>
+                <h4>Mobile Stack</h4>
+                <p>React Native, Redux Toolkit, MapLibre, Firebase FCM.</p>
               </div>
-              <div className="detail">
-                <h4>Learning</h4>
-                <p>
-                  Socket event patterns, Redis caching, Redux normalization,
-                  permission handling, real-time system architecture.
-                </p>
+            </div>
+            <div className="apk-banner">
+              <div className="apk-info">
+                <strong>TrackMate_v1.3.apk</strong>
+                <span>24.7MB • Release Build • ProGuard</span>
               </div>
+              <a
+                href="https://github.com/jack-ghosh/TrackMate-app/releases/download/v1.3/TrackMate.apk"
+                className="btn-apk"
+              >
+                <Download size={16} /> APK
+              </a>
             </div>
             <div className="project-tags">
               <span className="tag">Socket.io</span>
-              <span className="tag">React Native</span>
-              <span className="tag">Redux</span>
-              <span className="tag">MongoDB</span>
               <span className="tag">Redis</span>
+              <span className="tag">React Native</span>
               <span className="tag">Real-time</span>
             </div>
           </div>
 
           <div className="project-card">
             <div className="project-header">
-              <h3>Euphaura (Startup)</h3>
+              <h3>Euphaura Community</h3>
               <a href="https://euphaura.in" className="project-link">
                 <ExternalLink size={18} />
               </a>
             </div>
             <p className="project-desc">
-              Hyperlocal social media app. Shipped community features, media
-              messaging, backend infrastructure, and real-time updates.
+              Hyperlocal social media infrastructure. Built the core community
+              engine, media upload pipelines, and real-time feed updates.
             </p>
-            <div className="project-details">
-              <div className="detail">
-                <h4>What I Built</h4>
-                <p>
-                  Community features (full stack), messaging system, media
-                  uploads to Cloudinary, Redis caching for conversation lists,
-                  real-time socket events.
-                </p>
-              </div>
-            </div>
             <div className="project-tags">
               <span className="tag">Express.js</span>
               <span className="tag">MongoDB</span>
               <span className="tag">Redis</span>
-              <span className="tag">React</span>
+              <span className="tag">Cloudinary</span>
               <span className="tag">Production</span>
             </div>
           </div>
@@ -213,65 +208,65 @@ function App() {
       <section className="section tech">
         <div className="container">
           <h2>Tech Stack</h2>
-
           <div className="tech-grid">
             <div className="tech-category">
               <h3>
                 <Code size={20} /> Backend
               </h3>
               <div className="tech-list">
-                <span className="tech-badge">Node.js</span>
-                <span className="tech-badge">Express.js</span>
-                <span className="tech-badge">MongoDB</span>
-                <span className="tech-badge">Redis</span>
-                <span className="tech-badge">Socket.io</span>
-                <span className="tech-badge">Lua</span>
-                <span className="tech-badge">JWT</span>
+                {[
+                  "Node.js",
+                  "Express.js",
+                  "MongoDB",
+                  "Redis",
+                  "Socket.io",
+                  "Lua",
+                  "JWT",
+                ].map((t) => (
+                  <span key={t} className="tech-badge">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
-
             <div className="tech-category">
               <h3>
                 <Zap size={20} /> Frontend
               </h3>
               <div className="tech-list">
-                <span className="tech-badge">React Native</span>
-                <span className="tech-badge">Redux</span>
-                <span className="tech-badge">React</span>
-                <span className="tech-badge">React Navigation</span>
-                <span className="tech-badge">WatermelonDB</span>
+                {[
+                  "React Native",
+                  "Redux",
+                  "React",
+                  "React Navigation",
+                  "MapLibre",
+                ].map((t) => (
+                  <span key={t} className="tech-badge">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
-
             <div className="tech-category">
               <h3>
-                <Users size={20} /> Tools & DevOps
+                <Users size={20} /> Tools
               </h3>
               <div className="tech-list">
-                <span className="tech-badge">Docker</span>
-                <span className="tech-badge">Git</span>
-                <span className="tech-badge">Linux (WSL2)</span>
-                <span className="tech-badge">Firebase</span>
-                <span className="tech-badge">Postman</span>
-                <span className="tech-badge">Railway</span>
+                {[
+                  "Docker",
+                  "Git",
+                  "Linux (WSL2)",
+                  "Firebase FCM",
+                  "Postman",
+                  "Render",
+                ].map((t) => (
+                  <span key={t} className="tech-badge">
+                    {t}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* OPEN TO */}
-      <section className="section open-to">
-        <div className="container">
-          <h2>Open To</h2>
-          <p>
-            Full-stack development roles, backend-focused positions, or
-            DevOps-track opportunities.
-          </p>
-          <p>
-            Interested in: Real-time systems, system design, distributed
-            architecture, scaling apps to thousands of users.
-          </p>
         </div>
       </section>
 
@@ -290,19 +285,11 @@ function App() {
       {/* FOOTER */}
       <footer className="footer">
         <div className="container">
-          <p>
-            Open to opportunities 🚀 • Let’s build something impactful together
-          </p>
+          <p>Open to opportunities 🚀 • Let’s build something impactful.</p>
           <div className="footer-links">
             <a href="https://github.com/jack-ghosh">GitHub</a>
             <a href="https://linkedin.com/in/jack-ghosh">LinkedIn</a>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=jackghosh1323@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Email
-            </a>
+            <a href="mailto:jackghosh1323@gmail.com">Email</a>
           </div>
         </div>
       </footer>
